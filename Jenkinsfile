@@ -4,9 +4,10 @@ pipeline {
    }
     
     stages {
-        stage('Hello') {
+        stage('test') {
             steps {
-                echo 'Hello World'
+                sh 'node --version'
+                sh 'svn --version'
             }
         }
     }
